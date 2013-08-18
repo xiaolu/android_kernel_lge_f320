@@ -23,6 +23,7 @@ TOOLCHAIN_LINARO="${HOME}/AK/AK-google/arm-eabi-4.6/bin/arm-eabi-"
     echo ""
     echo "Skipping cleaning..."
   fi
+  rm -rfv .config; rm -rfv .config.old
 
    echo ""
   #make CROSS_COMPILE=$TOOLCHAIN_GOOGLE ARCH=arm g2-lgu-perf_defconfig
